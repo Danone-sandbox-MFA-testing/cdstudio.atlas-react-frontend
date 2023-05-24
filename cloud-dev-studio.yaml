@@ -1,10 +1,30 @@
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: atlas-app
+  description: Atlas app is an application which help danoners.
+  links:
+    - url: https://mag.danone.com/
+      title: Atlas app
+spec:
+  owner: cloud-dev-studio
+  
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: cdstudio.atlas-react-frontend
+  name: mag.frontend.StaticWebApp
+  description: MAG portal frontend
+  tags:
+    - typescript
+    - react
   annotations:
     github.com/project-slug: Danone-sandbox-MFA-testing/cdstudio.atlas-react-frontend
+  links:
+    - url: https://mag.danone.com/
+      title: Atlas app
 spec:
-  type: other
-  lifecycle: unknown
+  type: frontend
+  lifecycle: experimental
+  system: atlas-app
   owner: cloud-dev-studio
