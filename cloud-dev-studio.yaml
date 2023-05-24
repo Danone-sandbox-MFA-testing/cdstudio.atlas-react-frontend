@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cdstudio.atlas-react-frontend
+  annotations:
+    github.com/project-slug: Danone-sandbox-MFA-testing/cdstudio.atlas-react-frontend
+spec:
+  type: other
+  lifecycle: unknown
+  owner: cloud-dev-studio
